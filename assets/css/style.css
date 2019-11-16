@@ -52,3 +52,23 @@ textarea {
     left: 15rem;
     border-radius: 25px;
 }
+
+@media screen and (max-width: 1024px) {
+    #pb {
+        right: 10rem;
+    }
+
+    #cb {
+        left: 10rem;
+    }
+}
+
+@media screen and (max-width: 784px) {
+    #pb {
+        right: 5rem;
+    }
+
+    #cb {
+        left: 5rem;
+    }
+}
