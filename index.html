@@ -2,25 +2,26 @@
 <html lang="en-us">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <title>Password Generator</title>
     </head>
 
     <body>
-        <header>
-                <h1>Password Generator</h1>
+        <header class="container">
+            <h1>Password Generator</h1>
         </header>
         
-        <main>
+        <main class="container">
             <h2>Generate a Password</h2>
 
             <section>
-                <textarea placeholder="Your secure password"></textarea>
+                <textarea id="area" placeholder="Your secure password"></textarea>
             </section>
 
-            <section>
-                <button type="button" class="btn btn-primary">Generate Password</button>
-                <button type="button" class="btn btn-light">Copy to Clipboard</button>
+            <section id="buttons">
+                <button id="pb" type="button" class="btn btn-primary">Generate Password</button>
+                <button id="cb" type="button" class="btn btn-light">Copy to Clipboard</button>
             </section>
         </main>
 
