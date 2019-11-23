@@ -7,6 +7,7 @@ let characters;
 let password;
 let area = document.getElementById('area');
 let passwordButton = document.getElementById('pb');
+let copyButton = document.getElementById('cb');
 
 const generate = () => {
     password = '';
@@ -110,7 +111,24 @@ const generate = () => {
     }
 
     area.textContent = password;
+
+    if (copyButton.style.backgroundColor !== 'red') {
+        copyButton.style.backgroundColor = 'red';
+        copyButton.style.color = 'white';
+    }
+
+    console.log(area.textContent);
+}
+
+const copy = () => {
+    if (copyButton.style.backgroundColor !== 'red') {
+        return;
+    } else {
+        area.select();
+        document.execCommand('copy');
+    }
 }
 
 passwordButton.onclick = generate;
 
+copyButton.onclick = copy;
